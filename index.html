@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos de Parámetros del Proyectil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Ingresa los parámetros de la Catapulta</h1>
+        <form id="projectileForm">
+            <label for="angle">Ángulo de salida (grados):</label>
+            <input type="number" id="angle" name="angle" step="any" required>
+            <label for="initialHeight">Altura inicial (metros):</label>
+            <input type="number" id="initialHeight" name="initialHeight" step="any" required>
+            <label for="time">Tiempo de vuelo (segundos):</label>
+            <input type="number" id="time" name="time" step="any" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+        <div id="animationContainer">
+            <div id="projectile"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
